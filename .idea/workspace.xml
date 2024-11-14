@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="939b9f9c-644b-41f5-b294-5a850f2360be" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project_database.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project_database.iml" afterDir="false" />
+    <list default="true" id="939b9f9c-644b-41f5-b294-5a850f2360be" name="Changes" comment="sql insertion">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_database/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project_database/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sacco/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/sacco/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sacco/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/sacco/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,18 +15,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ianmukuna97"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ianmukuna97&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ianmukuna97/project_database.git",
-    "accountId": "07b0c698-6874-454c-8880-68db9e352fa4"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ianmukuna97/project_database.git&quot;,
+    &quot;accountId&quot;: &quot;07b0c698-6874-454c-8880-68db9e352fa4&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -99,11 +94,25 @@
       <option name="presentableId" value="Default" />
       <updated>1731472563889</updated>
       <workItem from="1731472568505" duration="10128000" />
-      <workItem from="1731518587691" duration="4668000" />
+      <workItem from="1731518587691" duration="6401000" />
+      <workItem from="1731550146610" duration="1617000" />
     </task>
+    <task id="LOCAL-00001" summary="sql insertion">
+      <option name="closed" value="true" />
+      <created>1731547300057</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731547300057</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="sql insertion" />
+    <option name="LAST_COMMIT_MESSAGE" value="sql insertion" />
   </component>
 </project>
