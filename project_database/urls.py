@@ -17,6 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from sacco import views
+
 urlpatterns = [
+
+    path('', views.test, name='test'),
     path('admin/', admin.site.urls),
 ]
