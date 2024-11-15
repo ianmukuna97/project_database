@@ -1,11 +1,11 @@
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from sacco.models import Customer, Deposit
-from django.core.exceptions import ObjectDoesNotExist
+
 
 # Create your views here.
 def test(request):
-    # Uncomment to create new customers
+    #save a customer
     # c1 = Customer(first_name='Saida', last_name='Ali',
     #               email='saida@x.com', dob='2000-11-28', gender='Female', weight=62)
     # c1.save()
@@ -13,28 +13,23 @@ def test(request):
     # c2 = Customer(first_name='Jake', last_name='Juma',
     #               email='juma@x.com', dob='1999-11-28', gender='Male', weight=62)
     # c2.save()
-
     customer_count = Customer.objects.count()
-
-    try:
-        c1 = Customer.objects.get(id=1)  # Fetch customer with id=1
-        d1 = Deposit(amount=1000, status=True, customer=c1)
-        d1.save()
-    except ObjectDoesNotExist:
-        return HttpResponse("Customer with id=1 does not exist.")
-
+    # fetching one customer
+    c1 = Customer.objects.get(id=1) # select * from customers where id=1
+    print(c1)
+    d1 = Deposit(amount=1000, status=True, customer=c1)
+    d1.save()
     deposit_count = Deposit.objects.count()
-    return HttpResponse(f"Ok, Done. We have {customer_count} customers and {deposit_count} deposits.")
-
+    return HttpResponse(f"Ok, Done, We have {customer_count} customers and {deposit_count} deposits")
 
 # http://localhost:8000/
 # http://localhost:8000/test
 # python manage.py runserver 8001
 
-
 def customers(request):
-    data = Customer.objects.all() # ORM select * from customers
+    data = Customer.objects.all().order_by('-id').values()[0:10] # ORM select * from customers
     return render(request, "customers.html", {"customers": data})
+
 
 def delete_customer(request, customer_id):
     customer = Customer.objects.get(id=customer_id) # select * from customers where id=7
