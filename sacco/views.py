@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from sacco.models import Customer, Deposit
 from django.core.exceptions import ObjectDoesNotExist
 
@@ -25,3 +25,18 @@ def test(request):
 
     deposit_count = Deposit.objects.count()
     return HttpResponse(f"Ok, Done. We have {customer_count} customers and {deposit_count} deposits.")
+
+
+# http://localhost:8000/
+# http://localhost:8000/test
+# python manage.py runserver 8001
+
+
+def customers(request):
+    data = Customer.objects.all() # ORM select * from customers
+    return render(request, "customers.html", {"customers": data})
+
+def delete_customer(request, customer_id):
+    customer = Customer.objects.get(id=customer_id) # select * from customers where id=7
+    customer.delete() # delete from customers where id=7
+    return redirect('customers')

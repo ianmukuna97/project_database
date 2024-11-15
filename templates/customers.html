@@ -1,0 +1,36 @@
+{% extends 'master.html' %}
+
+{% block title %}
+    <title>Sacco Customers</title>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h2>Sacco Customers</h2>
+        <table class="table table-striped">
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Joining Date</th>
+                <th>Delete</th>
+            </tr>
+
+            {% for customer in customers %}
+                <tr>
+                    <td>{{ customer.id }}</td>
+                    <td>{{ customer.first_name }}</td>
+                    <td>{{ customer.last_name }}</td>
+                    <td>{{ customer.email }}</td>
+                    <td>{{ customer.created_at }}</td>
+                    <td>
+                        <a class="btn btn-danger" href="#">Remove</a>
+                    </td>
+                </tr>
+            {% empty %}
+                <p>No customers in the sacco</p>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}

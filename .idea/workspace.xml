@@ -4,13 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="939b9f9c-644b-41f5-b294-5a850f2360be" name="Changes" comment="sql insertion">
+    <list default="true" id="939b9f9c-644b-41f5-b294-5a850f2360be" name="Changes" comment="Django and sql">
+      <change afterPath="$PROJECT_DIR$/sacco/management/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sacco/management/commands/populate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/customers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/master.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_database/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project_database/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sacco/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/sacco/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sacco/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/sacco/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,17 +46,23 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2omR3GiimrRQ9byP0yYYA0j6kOL" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;Django Server.project_database.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Hacker In Disguise/Desktop/project_database/sacco/management&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -50,6 +71,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Hacker In Disguise\Desktop\project_database\sacco\management" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="project_database" type="Python.DjangoServer" factoryName="Django server">
       <module name="project_database" />
@@ -95,7 +121,10 @@
       <updated>1731472563889</updated>
       <workItem from="1731472568505" duration="10128000" />
       <workItem from="1731518587691" duration="6401000" />
-      <workItem from="1731550146610" duration="1617000" />
+      <workItem from="1731550146610" duration="2209000" />
+      <workItem from="1731563008356" duration="7604000" />
+      <workItem from="1731613941043" duration="6877000" />
+      <workItem from="1731641120466" duration="2470000" />
     </task>
     <task id="LOCAL-00001" summary="sql insertion">
       <option name="closed" value="true" />
@@ -105,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731547300057</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Django and sql">
+      <option name="closed" value="true" />
+      <created>1731551883259</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731551883259</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +150,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="sql insertion" />
-    <option name="LAST_COMMIT_MESSAGE" value="sql insertion" />
+    <MESSAGE value="Django and sql" />
+    <option name="LAST_COMMIT_MESSAGE" value="Django and sql" />
   </component>
 </project>

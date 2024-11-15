@@ -36,3 +36,5 @@ class Deposit(models.Model):
 # run the migrations
 # python manage.py makemigrations
 # python manage.py migrate
+
+# python manage.py
