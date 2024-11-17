@@ -15,22 +15,37 @@
                 <th>Email</th>
                 <th>Joining Date</th>
                 <th>Delete</th>
+                <th>Details</th>
             </tr>
 
-            {% for customer in customers %}
+            {% for customer in data.objectlist %}
                 <tr>
                     <td>{{ customer.id }}</td>
                     <td>{{ customer.first_name }}</td>
                     <td>{{ customer.last_name }}</td>
-                    <td>{{ customer.email }}</td> 
+                    <td>{{ customer.email }}</td>
                     <td>{{ customer.created_at }}</td>
                     <td>
-                        <a class="btn btn-danger" href="{% url 'delete_customer' customer.id %}">Remove</a>
+                        <a class="btn btn-danger btn-sm" href="{% url 'delete_customer' customer.id %}">Remove</a>
+                    </td>
+                    <td>
+                        <a class="btn btn-primary btn-sm" href="{% url 'customer_details' customer.id %}">Details</a>
                     </td>
                 </tr>
             {% empty %}
                 <p>No customers in the sacco</p>
             {% endfor %}
         </table>
+        <div class="row justify-content-center">
+            <div class="col-sm-2">
+                {% if data.has_previous %}
+                    <a class="btn btn-outline-primary btn-sm" href="?page=1{{ data.previous_page_number }}"> << </a>
+                {% endif %}
+            <span class="mx-3">{{ data.number }}</span>
+              {% if data.has_next %}
+                    <a class="btn btn-outline-primary btn-sm" href="?page=1{{ data.next_page_number }}"> >> </a>
+                {% endif %}
+            </div>
+        </div>
     </div>
 {% endblock %}
